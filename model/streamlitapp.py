@@ -1,6 +1,7 @@
 import pickle
 import streamlit as st
 
+
 # Load the trained model
 model = pickle.load(open('ridge_model.pkl', 'rb'))
 
@@ -49,17 +50,18 @@ def main():
     carbo  = st.number_input  ('carbo')
     sugars  = st.number_input  ('sugars')
     vitamins  = st.number_input  ('vitamins')
-    shelf  = st.number_input  ('shelf')
     weight  = st.number_input  ('weight')
     cups  = st.number_input  ('cups')
-    type_C  = st.number_input  ('type_C')
-    type_H  = st.number_input  ('type_H')
-    
+    # Cereal_Type_Cold  = st.number_input  ('Cereal Type (Cold)', help='Select 1 if cereal type is eaten Hot, Select 0 if cereal type is not eaten Hot')
+    Cereal_Type_Cold = st.number_input('Cereal Type (Cold)', min_value=0, max_value=0, step=1, format="%d", help='Select 0 if cereal type is eaten Cold')
+    # Cereal_Type_Hot  = st.number_input  ('Cereal Type (Hot)',  help='Select 1 if cereal type is eaten Cold, Select 0 if cereal type is not eaten Cold')
+    Cereal_Type_Hot = st.number_input('Cereal Type (Hot)', min_value=0, max_value=1, step=1, format="%d", help='Select 1 if cereal type is eaten Hot, Select 0 if cereal type is not eaten Hot')
+
     
     #prediction code
     if st.button('Predict'):
-        makeprediction = model.predict([[calories, protein, fat, sodium, fiber,carbo, sugars, vitamins, shelf,
-                                         weight, cups, type_C, type_H]])
+        makeprediction = model.predict([[calories, protein, fat, sodium, fiber,carbo, sugars, vitamins,
+                                         weight, cups, Cereal_Type_Cold, Cereal_Type_Hot]])
         output = round(makeprediction[0],2)
         st.success('The Rating for this Cereal is {}'.format(output))
 if __name__ == '__main__':
