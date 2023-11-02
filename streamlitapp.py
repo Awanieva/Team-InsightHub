@@ -2,7 +2,7 @@ import pickle
 import streamlit as st
 
 # Load the trained model
-model = pickle.load(open("C:/Users/chine/Downloads/Cereal deployment/ridge_model.pkl", 'rb'))
+model = pickle.load(open('ridge_model.pkl, 'rb'))
 
 def main():
     st.title("Cereal Ratings")
