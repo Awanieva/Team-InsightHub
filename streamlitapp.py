@@ -31,7 +31,9 @@ def main():
                 - Confidence Chinelo Ojiako (Project Lead)
                 - (Assistant project lead)
                 - (Query Analyst)
-                - 
+                - Isaac Ndirangu Muturi
+                - Mobki Markus 
+                - Anubha Jarwal 
                  
                  """)
             
