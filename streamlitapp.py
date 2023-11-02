@@ -60,7 +60,7 @@ def main():
     #prediction code
     if st.button('Predict'):
         makeprediction = model.predict([[calories, protein, fat, sodium, fiber,carbo, sugars, vitamins, shelf,
-                                         weight, cups, type_C, type_H]])
+                                         weight, cups, Cereal_Type_Cold, Cereal_Type_Hot]])
         output = round(makeprediction[0],2)
         st.success('The Rating for this Cereal is {}'.format(output))
 if __name__ == '__main__':
