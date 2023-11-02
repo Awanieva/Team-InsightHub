@@ -54,9 +54,9 @@ def main():
     weight  = st.number_input  ('weight')
     cups  = st.number_input  ('cups')
     # Cereal_Type_Cold  = st.number_input  ('Cereal Type (Cold)', help='Select 1 if cereal type is eaten Hot, Select 0 if cereal type is not eaten Hot')
-    Cereal_Type_Cold = st.number_input('Cereal Type (Cold)', min_value=0, max_value=0, step=1, format="%d", help='Select 0 if cereal type is eaten Cold')
+    Cereal_Type_Cold = st.number_input('Cereal Type (Cold)', min_value=0, max_value=0, step=1, format="%d", help='Select 0 if cereal type is eaten Cold,')
     # Cereal_Type_Hot  = st.number_input  ('Cereal Type (Hot)',  help='Select 1 if cereal type is eaten Cold, Select 0 if cereal type is not eaten Cold')
-    Cereal_Type_Hot = st.number_input('Cereal Type (Hot)', min_value=1, max_value=1, step=1, format="%d", help='Select 1 if cereal type is eaten Hot')
+    Cereal_Type_Hot = st.number_input('Cereal Type (Hot)', min_value=0, max_value=1, step=1, format="%d", help='Select 1 if cereal type is eaten Hot, Select 0 if cereal type is not eaten Hot')
 
     
     #prediction code
