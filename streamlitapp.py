@@ -1,9 +1,9 @@
 import pickle
 import streamlit as st
 
+
 # Load the trained model
-with open('ridge_model.pkl', 'rb') as file:
-    model = pickle.load(file)
+model = pickle.load(open('ridge_model.pkl', 'rb'))
 
 def main():
     st.title("Cereal Ratings")
@@ -53,8 +53,8 @@ def main():
     shelf  = st.number_input  ('shelf')
     weight  = st.number_input  ('weight')
     cups  = st.number_input  ('cups')
-    type_C  = st.number_input  ('type_C')
-    type_H  = st.number_input  ('type_H')
+    Cereal_Type_Cold  = st.number_input  ('Cereal Type (Cold)', help='Select 1 if cereal type is eaten Hot, Select 0 if cereal type is not eaten Hot')
+    Cereal_Type_Hot  = st.number_input  ('Cereal Type (Hot)',  help='Select 1 if cereal type is eaten Cold, Select 0 if cereal type is not eaten Cold')
     
     
     #prediction code
