@@ -34,7 +34,8 @@ def main():
                 - (Query Analyst)
                 - Isaac Ndirangu Muturi
                 - Mobki Markus 
-                - Anubha Jarwal 
+                - Anubha Jarwal
+                - Owolabi Israel 
                  
                  """)
             
