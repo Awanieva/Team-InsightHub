@@ -1,6 +1,6 @@
 # Team-InsightHub Premier Project
 
-# Topic Here
+# Understanding the Relationship Between Nutritional Content and Cereal Ratings: A Data-Driven Approach.
 
 ## Introduction
 In an era where quick meals are paramount, breakfast cereals stand out for their convenience. However, with this convenience comes a question of nutritional value, which varies greatly among different cereals. The US Food and Drug Administration (FDA) is amplifying efforts to educate consumers about nutritionally deficient options. The label "healthy" is not just a marketing term; it's a regulated claim that can only be used if the product meets specific nutritional criteria. Against the backdrop of heightened health consciousness and the crucial role of breakfast cereals in dietary patterns—particularly in underprivileged homes where food diversity is scant—our project seeks to navigate the cereal aisle effectively, ensuring food security and combating malnutrition.
@@ -64,6 +64,7 @@ Ridge Regression
 
 ## Model Deployment:
 Streamlit was used to deploy the model
+https://cerealratings.streamlit.app/
 
 
 ## Model Development
@@ -71,20 +72,20 @@ https://github.com/Awanieva/Team-InsightHub/blob/main/Model%20Development.ipynb
 
 
 ## Exporatory Data Analysis
-
+https://github.com/Awanieva/Team-InsightHub/blob/main/Cereal_Analysis.ipynb
 
 
 ## Dashboard Link (POWER BI)
-
+https://app.powerbi.com/view?r=eyJrIjoiNzY0ZGIxY2ItOTIzNS00MDExLWIxOTctZGNhOTY4ZmExMGU2IiwidCI6IjU0NjJmMDc4LWFiYTgtNDE1OS05MWYwLWVhODg1MmJjOTU4NCJ9
 
 ## Link to the documentation
-
+https://docs.google.com/document/d/1yrMF1zah_ge0fWaWuJOBfn8SvUQtZovUJOHWPjSnhto/edit
 
 ## Link to Deployment Code
 https://github.com/Awanieva/Team-InsightHub/blob/main/streamlitapp.py
 
 ## Link to the Presentation slide
-
+https://docs.google.com/presentation/d/1up5pbGX2o7K2MrQRRwiTx4erFMNKZSziW1jhObrMX1g/edit?usp=sharing
 
 
 
